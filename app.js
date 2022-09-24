@@ -45,6 +45,7 @@ console.log(originalStory);
 
 let numberOfQuestions = 13;
 let questionArray = [];
+let questionCounter = 0;
 
 const query = "Please enter ";
 questionArray.push(`${query} the name of a supercomputer`);
@@ -62,8 +63,9 @@ questionArray.push(`${query} the name of another planet`);
 questionArray.push(`${query} a noum related to phisics`);
 questionArray.push(`${query} a noum`);
 
-for(let i = 0; i < questionArray.length; i++){
-    console.log(i);
+for(let i = numberOfQuestions; i >= 0; i--){
+    console.log(`i -> ${i} questionCounter -> ${questionCounter}`);
+    questionCounter++;
 }
 
 
