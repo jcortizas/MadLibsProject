@@ -1,6 +1,6 @@
 "use strict";
 
-let userInputs = ["Multivac","data","human","universe","Earth","2061","space","energy","planets","overcrowded","Planet X-23","entropy","ligth"];
+let userInputs = [];
 
 /*
 0 -> Multivac
@@ -17,6 +17,35 @@ let userInputs = ["Multivac","data","human","universe","Earth","2061","space","e
 11 -> entropy
 12 -> light
 */
+
+let numberOfQuestions = 13;
+let questionArray = [];
+let questionCounter = 0;
+
+const query = "Please enter";
+questionArray.push(`${query} the name of a supercomputer`);
+questionArray.push(`${query} the noum of something a computer can process`);
+questionArray.push(`${query} the name of a animal species`);
+questionArray.push(`${query} the name of a place`);
+questionArray.push(`${query} the name of a planet`);
+questionArray.push(`${query} a year in th future`);
+questionArray.push(`${query} the name of a place`);
+questionArray.push(`${query} the name of valuabble a thing`);
+questionArray.push(`${query} the name of another valuabble a thing`);
+questionArray.push(`${query} the name of another valuabble a thing`);
+questionArray.push(`${query} an adjective`);
+questionArray.push(`${query} the name of another planet`);
+questionArray.push(`${query} a noum related to physics`);
+questionArray.push(`${query} a noum`);
+
+for(let i = numberOfQuestions; i >= 0; i--){
+    userInputs.push(prompt(`${questionArray[questionCounter]} (questions left ${numberOfQuestions-questionCounter})`));
+    console.log(` Answer ${questionCounter} --> ${userInputs[questionCounter]}`);
+    //console.log(`i -> ${i} questionCounter -> ${questionCounter}`);
+    questionCounter++;
+}
+
+alert('All done! Ready for your totally-accurate, not-at-all confusing history of tech??');
 
 // Plot summary of Asimov's short story "The Last Question"
 //https://en.wikipedia.org/wiki/The_Last_Question#Plot_summary
@@ -42,35 +71,6 @@ demonstration. The story ends with ${userInputs[0]}'s pronouncement:
 
 
 //console.log(originalStory);
-
-let numberOfQuestions = 13;
-let questionArray = [];
-let questionCounter = 0;
-
-const query = "Please enter";
-questionArray.push(`${query} the name of a supercomputer`);
-questionArray.push(`${query} the noum of something a computer can process`);
-questionArray.push(`${query} the name of a animal species`);
-questionArray.push(`${query} the name of a place`);
-questionArray.push(`${query} the name of a planet`);
-questionArray.push(`${query} a year in th future`);
-questionArray.push(`${query} the name of a place`);
-questionArray.push(`${query} the name of valuabble a thing`);
-questionArray.push(`${query} the name of another valuabble a thing`);
-questionArray.push(`${query} the name of another valuabble a thing`);
-questionArray.push(`${query} an adjective`);
-questionArray.push(`${query} the name of another planet`);
-questionArray.push(`${query} a noum related to physics`);
-questionArray.push(`${query} a noum`);
-
-for(let i = numberOfQuestions; i >= 0; i--){
-    console.log(`${questionArray[questionCounter]} (questions left ${numberOfQuestions-questionCounter})`);
-    //console.log(`i -> ${i} questionCounter -> ${questionCounter}`);
-    questionCounter++;
-}
-
-
-
 
 
 
