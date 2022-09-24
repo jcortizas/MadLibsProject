@@ -44,6 +44,27 @@ demonstration. The story ends with ${userInputs[0]}'s pronouncement:
 console.log(originalStory);
 
 let numberOfQuestions = 13;
+let questionArray = [];
+
+const query = "Please enter ";
+questionArray.push(`${query} the name of a supercomputer`);
+questionArray.push(`${query} the noum of something a computer can process`);
+questionArray.push(`${query} the name of a animal species`);
+questionArray.push(`${query} the name of a place`);
+questionArray.push(`${query} the name of a planet`);
+questionArray.push(`${query} a year in th future`);
+questionArray.push(`${query} the name of a place`);
+questionArray.push(`${query} the name of valuabble a thing`);
+questionArray.push(`${query} the name of another valuabble a thing`);
+questionArray.push(`${query} the name of another valuabble a thing`);
+questionArray.push(`${query} an adjective`);
+questionArray.push(`${query} the name of another planet`);
+questionArray.push(`${query} a noum related to phisics`);
+questionArray.push(`${query} a noum`);
+
+for(let i = 0; i < questionArray.length; i++){
+    console.log(i);
+}
 
 
 
