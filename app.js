@@ -47,7 +47,7 @@ let numberOfQuestions = 13;
 let questionArray = [];
 let questionCounter = 0;
 
-const query = "Please enter ";
+const query = "Please enter";
 questionArray.push(`${query} the name of a supercomputer`);
 questionArray.push(`${query} the noum of something a computer can process`);
 questionArray.push(`${query} the name of a animal species`);
@@ -60,10 +60,11 @@ questionArray.push(`${query} the name of another valuabble a thing`);
 questionArray.push(`${query} the name of another valuabble a thing`);
 questionArray.push(`${query} an adjective`);
 questionArray.push(`${query} the name of another planet`);
-questionArray.push(`${query} a noum related to phisics`);
+questionArray.push(`${query} a noum related to physics`);
 questionArray.push(`${query} a noum`);
 
 for(let i = numberOfQuestions; i >= 0; i--){
+    console.log(questionArray[questionCounter]);
     console.log(`i -> ${i} questionCounter -> ${questionCounter}`);
     questionCounter++;
 }
