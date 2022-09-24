@@ -41,7 +41,7 @@ demonstration. The story ends with ${userInputs[0]}'s pronouncement:
     And ${userInputs[0]} said: "LET THERE BE ${userInputs[12].toUpperCase()}!" And there was ${userInputs[12]}"`
 
 
-console.log(originalStory);
+//console.log(originalStory);
 
 let numberOfQuestions = 13;
 let questionArray = [];
@@ -65,7 +65,7 @@ questionArray.push(`${query} a noum`);
 
 for(let i = numberOfQuestions; i >= 0; i--){
     console.log(`${questionArray[questionCounter]} (questions left ${numberOfQuestions-questionCounter})`);
-    console.log(`i -> ${i} questionCounter -> ${questionCounter}`);
+    //console.log(`i -> ${i} questionCounter -> ${questionCounter}`);
     questionCounter++;
 }
 
