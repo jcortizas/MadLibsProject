@@ -15,7 +15,7 @@ let userInputs = ["Multivac","data","human","universe","Earth","2061","space","e
 9 -> overcrowded
 10 -> Planet X-23
 11 -> entropy
-12 -> light—
+12 -> light
 */
 
 // Plot summary of Asimov's short story "The Last Question"
@@ -41,9 +41,9 @@ demonstration. The story ends with ${userInputs[0]}'s pronouncement:
     And ${userInputs[0]} said: "LET THERE BE ${userInputs[12].toUpperCase()}!" And there was ${userInputs[12]}"`
 
 
-
 console.log(originalStory);
 
+let numberOfQuestions = 13;
 
 
 
