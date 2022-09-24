@@ -64,7 +64,7 @@ questionArray.push(`${query} a noum related to physics`);
 questionArray.push(`${query} a noum`);
 
 for(let i = numberOfQuestions; i >= 0; i--){
-    console.log(questionArray[questionCounter]);
+    console.log(`${questionArray[questionCounter]} (questions left ${numberOfQuestions-questionCounter})`);
     console.log(`i -> ${i} questionCounter -> ${questionCounter}`);
     questionCounter++;
 }
