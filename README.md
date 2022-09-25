@@ -1,3 +1,3 @@
 # MadLibsProject
-Practice exercise for bitdegree javascript course
+Practice exercise for free javascript course and git use practice.
 
